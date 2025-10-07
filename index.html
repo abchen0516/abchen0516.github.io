@@ -46,7 +46,7 @@
             Aobo Chen, Wei Qian, Zheyuan Liu, Shagufta Mehnaz, Tianhao Wang, Mengdi Huai
         </p>
         <p class="text-md md:text-lg font-normal mt-2 px-4">
-            Sunday, August 3, 2025 | 8:00 AM - 11:00 AM (Schedule placeholder)
+            Tutorial Date: TBD
         </p>
     </div>
     <!-- <div class="hero-title-bg py-16 md:py-24 mb-8 md:mb-12">
@@ -78,10 +78,11 @@
                         <a href="#abstract" class="text-gray-700 hover:text-blue-600 hover:font-semibold transition duration-200">Abstract</a>
                         <a href="#audience" class="text-gray-700 hover:text-blue-600 hover:font-semibold transition duration-200">Target Audience</a>
                         <a href="#materials" class="text-gray-700 hover:text-blue-600 hover:font-semibold transition duration-200">Materials</a>
-                        <a href="#contents" class="text-gray-700 hover:text-blue-600 hover:font-semibold transition duration-200">Contents</a>
-                        <a href="#rationale" class="text-gray-700 hover:text-blue-600 hover:font-semibold transition duration-200">Relevance</a>
+                        <a href="#models" class="text-gray-700 hover:text-blue-600 hover:font-semibold transition duration-200">Models</a>
                         <a href="#related-tutorials" class="text-gray-700 hover:text-blue-600 hover:font-semibold transition duration-200">Related Tutorials</a>
                         <a href="#contributors" class="text-gray-700 hover:text-blue-600 hover:font-semibold transition duration-200">Contributors</a>
+                        <a href="#contact" class="text-gray-700 hover:text-blue-600 hover:font-semibold transition duration-200">Contact</a>
+                        <a href="#acknowledgments" class="text-gray-700 hover:text-blue-600 hover:font-semibold transition duration-200">Acknowledgments</a>
                         <a href="#references" class="text-gray-700 hover:text-blue-600 hover:font-semibold transition duration-200">References</a>
                     </nav>
                 </div>
@@ -111,129 +112,14 @@
                     </div>
                 </section>
 
-                <section id="contents">
-                    <h2 class="text-2xl font-bold mb-6 border-b pb-3">Tutorial Contents</h2>
+                <section id="modules">
+                    <h2 class="text-2xl font-bold mb-6 border-b pb-3">Tutorial Modules</h2>
                     <div class="space-y-6 text-gray-700 leading-relaxed">
-                        <div>
-                            <h3 class="text-xl font-semibold text-gray-800">Part 1: Introduction (20 minutes)</h3>
-                            <!-- <ul class="list-disc ml-10 mt-2 space-y-1">
-                                <li>Motivation: The Right to be Forgotten</li>
-                                <li>Fundamentals of Machine Unlearning: Definitions and Goals</li>
-                                <li>Taxonomy of Unlearning Methods: Exact vs. Approximate Unlearning</li>
-                            </ul> -->
-                            <p class="text-gray-700 leading-relaxed inbox-text"> Machine unlearning is a rapidly emerging area in the era of datadriven artificial intelligence, closely tied to privacy protection, knowledge editing, and regulatory compliance  . In the first part of this tutorial, we will cover the following topics: </p>
-                            <p class="text-gray-700 leading-relaxed inbox-text mt-2"> • Introduction of the fundamental paradigm of machine unlearning, where we will cover the core concepts, motivations, and formal definitions of machine unlearning from the data mining perspective. We will also demonstrate open-source tools and code frameworks that enable the practical implementation of unlearning methods.</p>
-                            <p class="text-gray-700 leading-relaxed inbox-text"> • The security and privacy challenges in machine unlearning  , where we will cover the key risks, vulnerabilities, and open issues associated with machine unlearning, setting the stage for deeper exploration of these challenges and their defenses in later parts of the tutorial.   </p>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-gray-800">Part 2: Security and Privacy in Machine Unlearning (30 minutes)</h3>
-                            <!-- <ul class="list-disc ml-10 mt-2 space-y-1">
-                                <li>Defining the Threat Model: Adversary Goals and Capabilities</li>
-                                <li>Key Vulnerabilities in the Unlearning Pipeline</li>
-                                <li>Evaluation Metrics for Security and Privacy</li>
-                            </ul> -->
-                            <p class="text-gray-700 leading-relaxed inbox-text"> Security and privacy are fundamental concerns in machine learning and data mining, as models are highly vulnerable to malicious manipulations and information leakage.</p>
-                            <p class="text-gray-700 leading-relaxed inbox-text mt-2"> • We will begin by grounding our discussion in the
-                                traditional cybersecurity framework of the CIA triad:
-                                Confidentiality, Integrity, and Availability. We will explain
-                                how these concepts map to machine learning, where
-                                confidentiality translates to privacy (protecting training
-                                data from leakage), and integrity/availability translates to
-                                security (ensuring the model behaves as intended and is
-                                not corrupted).</p>
-                            <p class="text-gray-700 leading-relaxed inbox-text mt-2"> • We will introduce traditional security attacks from a
-                                data-driven knowledge mining cycle, including but not
-                                limited to data poisoning attacks during the training
-                                stage, adversarial attacks during the inference stage, and
-                                backdoor attacks that span across both the training and inference stages. In addition, we will review widely used
-                                defense strategies against these traditional security attacks.
-                                </p>
-                            <p class="text-gray-700 leading-relaxed inbox-text mt-2">• We will provide a systematic introduction for traditional
-                                privacy attacks from the data and model perspectives, including data reconstruction attacks, membership inference
-                                attacks, and model stealing attacks. We will also introduce
-                                several commonly used privacy-preserving defenses.</p>
-                        </div>
-                         <div>
-                            <h3 class="text-xl font-semibold text-gray-800">Part 3: Security Attacks and Countermeasures (40 minutes)</h3>
-                            <!-- <ul class="list-disc ml-10 mt-2 space-y-1">
-                                <li>Model Integrity and Backdoor Attacks</li>
-                                <li>Poisoning Attacks on Unlearning Algorithms</li>
-                                <li>Defensive Strategies and Verification Techniques</li>
-                            </ul> -->
-                            <p class="text-gray-700 leading-relaxed inbox-text"> Machine unlearning introduces new attack surfaces that can be
-exploited by motivated attackers. In particular, since models
-are edited upon the arrival of unlearning requests, attackers can
-launch unlearning attacks to manipulate the unlearning process
-such that unlearned models return attacker-desired results. In
-this part, we will cover the following topics:</p>
-                            <p class="text-gray-700 leading-relaxed inbox-text mt-2"> • We will introduce a structured compact taxonomy for
-existing unlearning attacks to ensure in-depth introduction
-from different unlearning security dimensions. Specifically,
-based on their interactions with traditional security attack
-threats, we will categorize existing unlearning attacks
-into four types: (1) sole unlearning attacks,
-where attackers solely exploit the unlearning phase itself to
-induce desired outcomes; (2) poison-embedded unlearning
-attacks, where attackers utilize the unlearning
-process to craft unlearning requests to activate hidden poisoning effects embedded during training; (3) adversarialenhanced unlearning attacks, where attackers craft malicious unlearning requests to increase the
-model's susceptibility to inference-time evasion attacks;
-(4) backdoor-injected unlearning attacks, where
-attackers inject malicious backdoor triggers during training
-and then exploit unlearning to reactivate those triggers
-during inference. We will also explore other unlearning
-security attack dimensions, including the unlearning data
-types, attackers' capabilities, and model types.</p>
-                            <p class="text-gray-700 leading-relaxed inbox-text mt-2"> • Additionally, we will introduce and categorize existing
-defenses against unlearning attacks based on their design
-principles into three types: (1) before-unlearning;
-(2) during-unlearning; and (3) post-unlearning.
-We will also highlight the key challenges that remain in
-developing effective defenses against unlearning attacks. </p>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-gray-800">Part 4: Privacy Attacks and Countermeasures (40 minutes)</h3>
-                            <!-- <ul class="list-disc ml-10 mt-2 space-y-1">
-                                <li>Membership Inference Attacks against Unlearned Models</li>
-                                <li>Data Reconstruction and Property Inference Attacks</li>
-                                <li>Differentially Private Unlearning and Other Countermeasures</li>
-                            </ul> -->
-                        <p class="text-gray-700 leading-relaxed inbox-text"> Adopting machine unlearning techniques may not always
-provide the anticipated privacy protections, and could even
-introduce new privacy vulnerabilities. In practice, the unlearning process may inadvertently expose sensitive information
-through its interactions with the model and its environment,
-thereby creating additional privacy attack surfaces. This could
-potentially undermine the privacy of the system.</p>
-                        <p class="text-gray-700 leading-relaxed inbox-text mt-2"> • We will systematically introduce existing privacy attacks
-that arise from machine unlearning. To this end, we
-will present a structured taxonomy of representative
-unlearning-induced privacy attacks across four
-dimensions: (1) privacy vulnerability type; (2) victim data
-type; (3) victim model type; and (4) attacking tool. Each is grounded with a specific threat model. In particular, under
-the dimension of privacy vulnerability type, we will focus
-on three major categories: 1) unlearning-induced data
-reconstruction attacks, 2) unlearning-induced membership
-inference attacks, and 3) unlearning-induced model theft
-attacks. This taxonomy will provide participants with a
-comprehensive framework for understanding how unlearning can unintentionally expose sensitive information.</p>
-                        <p class="text-gray-700 leading-relaxed inbox-text mt-2"> • We will also introduce the state-of-the-art defenses against unlearning-induced privacy attacks, and
-the key challenges. For these introduced countermeasures, we will also categorize them based on the above
-unlearning-induced privacy attack dimensions. </p>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-gray-800">Part 5: Summary and Future Work (20 minutes)</h3>
-                            <!-- <ul class="list-disc ml-10 mt-2 space-y-1">
-                                <li>Recap of Key Challenges and Solutions</li>
-                                <li>Open Problems and Future Research Directions</li>
-                                <li>Ethical Considerations and Concluding Remarks</li>
-                            </ul> -->
-                            <p class="text-gray-700 leading-relaxed inbox-text"> While notable progress has been made in advancing security
-and privacy in machine unlearning, there is still considerable
-room for exploration and growth. In this part, we will: (1)
-summarize the key points discussed throughout the tutorial,
-and (2) highlight several open challenges and future research
-directions, such as robust unlearning for multimodal foundation
-models and reliable unlearning verification. </p>
-                        </div>
+                        <p class="inbox-text">• Part 1: Introduction (10 minutes)</p>
+                        <p class="inbox-text">• Part 2: Security and Privacy (20 minutes)</p>
+                        <p class="inbox-text">• Part 3: Security Attacks and Countermeasures in Machine Unlearning (30 minutes)</p>
+                        <p class="inbox-text">• Part 4: Privacy Attacks and Countermeasures in Machine Unlearning (30 minutes)</p>
+                        <p class="inbox-text">• Part 5: Summary and Future Work (10 minutes)</p>
                     </div>
                 </section>
 
@@ -371,7 +257,7 @@ of Virginia (UVA) in 2022. He serves as an assistant professor
 in the Department of Computer Science and at the School of
 Data Science by Courtesy. He has extensive publications in top
 security and database conferences. His work about differentially
-private synthetic data generation won multiple awards in NIST’s
+private synthetic data generation won multiple awards in NIST's
 competition. Prior to the University of Virginia, he obtained
 his Ph.D. from Purdue University in 2021 and held a postdoc
 position at Carnegie Mellon University.</p>
@@ -393,6 +279,18 @@ Best Paper Runner-up for KDD 2020.</p>
             </div>
         </div>
     </div>
+</section>
+<section id="contact">
+    <h2 class="text-2xl font-bold mb-6 border-b pb-3">Contact</h2>
+    <p class="text-gray-700 leading-relaxed inbox-text">
+        For questions regarding the tutorial, please contact us at <a href="mailto:mdhuai@iastate.edu">mdhuai@iastate.edu</a>.
+    </p>
+</section>
+<section id="acknowledgments">
+    <h2 class="text-2xl font-bold mb-6 border-b pb-3">Acknowledgments</h2>
+    <p class="text-gray-700 leading-relaxed inbox-text">
+        We sincerely thank all the contributors and the community for their continuous support and valuable feedback. This research is funded by NSF Grant #2350332, "Security and Privacy in Machine Unlearning", and NSF Grant #2442750, "CAREER: Enabling Reliable Uncertainty-Aware Decision Making with Unreliable Data".
+    </p>
 </section>
 <section id="references">
     <h2 class="text-2xl font-bold mb-6 border-b pb-3">References</h2>
