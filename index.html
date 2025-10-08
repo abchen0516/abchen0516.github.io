@@ -17,9 +17,9 @@
 
         /* Custom style for the hero title background */
         .hero-title-bg {
-            background-image: url('https://images.unsplash.com/photo-1543372654-b45dd90eeee5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your actual DC at night image URL */
+            background-image: url('https://vastphotos.com/files/uploads/photos/11330/washington-dc-mall-sunrise-l.jpg?v=20221018091735'); /* Replace with your actual DC at night image URL */
             background-size: cover;
-            background-position: center;
+            background-position: 0% 40%; /* Adjust to focus on the desired part of the image */ 
             color: white; /* Ensure text is readable against the dark background */
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for better readability */
         }
@@ -28,7 +28,9 @@
             margin-right: 2.5rem;
         }
     </style>
-</head>
+    <!-- https://images.foxtv.com/static.fox5dc.com/www.fox5dc.com/content/uploads/2023/09/1280/720/DC_NASA_File.jpg?ve=1&tl=1 -->
+<!-- </head>https://cloudinary.fclmedia.com/fctg/image/fetch/h_660,w_1200,q_100,c_fill,g_auto,fl_progressive/https://content.flightcentre.com/sites/default/files/gb/washington-dc-hero-ps.jpg -->
+ <!-- https://vastphotos.com/files/uploads/photos/11330/washington-dc-mall-sunrise-l.jpg?v=20221018091735 -->
 <body class="bg-gray-100 text-gray-800">
 
 
@@ -75,10 +77,10 @@
                 <div class="p-4 bg-white rounded-lg shadow-md">
                     <h3 class="font-bold text-lg mb-3 border-b pb-2">Navigation</h3>
                     <nav class="flex flex-col space-y-2">
-                        <a href="#abstract" class="text-gray-700 hover:text-blue-600 hover:font-semibold transition duration-200">Abstract</a>
+                        <a href="#abstract" class="text-gray-700 hover:text-blue-600 hover:font-semibold transition duration-200">Tutorial Abstract</a>
                         <a href="#audience" class="text-gray-700 hover:text-blue-600 hover:font-semibold transition duration-200">Target Audience</a>
-                        <a href="#materials" class="text-gray-700 hover:text-blue-600 hover:font-semibold transition duration-200">Materials</a>
-                        <a href="#models" class="text-gray-700 hover:text-blue-600 hover:font-semibold transition duration-200">Models</a>
+                        <a href="#materials" class="text-gray-700 hover:text-blue-600 hover:font-semibold transition duration-200">Tutorial Materials</a>
+                        <a href="#modules" class="text-gray-700 hover:text-blue-600 hover:font-semibold transition duration-200">Tutorial Modules</a>
                         <a href="#related-tutorials" class="text-gray-700 hover:text-blue-600 hover:font-semibold transition duration-200">Related Tutorials</a>
                         <a href="#contributors" class="text-gray-700 hover:text-blue-600 hover:font-semibold transition duration-200">Contributors</a>
                         <a href="#contact" class="text-gray-700 hover:text-blue-600 hover:font-semibold transition duration-200">Contact</a>
@@ -114,71 +116,34 @@
 
                 <section id="modules">
                     <h2 class="text-2xl font-bold mb-6 border-b pb-3">Tutorial Modules</h2>
-                    <div class="space-y-6 text-gray-700 leading-relaxed">
-                        <p class="inbox-text">• Part 1: Introduction (10 minutes)</p>
-                        <p class="inbox-text">• Part 2: Security and Privacy (20 minutes)</p>
-                        <p class="inbox-text">• Part 3: Security Attacks and Countermeasures in Machine Unlearning (30 minutes)</p>
-                        <p class="inbox-text">• Part 4: Privacy Attacks and Countermeasures in Machine Unlearning (30 minutes)</p>
-                        <p class="inbox-text">• Part 5: Summary and Future Work (10 minutes)</p>
+                    <div class="space-y-1">
+                        <p class="leading-relaxed inbox-text">• <strong>Part 1:</strong> Introduction (10 minutes)</p>
+                        <p class="leading-relaxed inbox-text">• <strong>Part 2:</strong> Security and Privacy (20 minutes)</p>
+                        <p class="leading-relaxed inbox-text">• <strong>Part 3:</strong> Security Attacks and Countermeasures in Machine Unlearning (30 minutes)</p>
+                        <p class="leading-relaxed inbox-text">• <strong>Part 4:</strong> Privacy Attacks and Countermeasures in Machine Unlearning (30 minutes)</p>
+                        <p class="leading-relaxed inbox-text">• <strong>Part 5:</strong> Summary and Future Work (10 minutes)</p>
                     </div>
                 </section>
 
-                <section id="rationale">
-                    <h2 class="text-2xl font-bold mb-6 border-b pb-3">Relevance and Rationale</h2>
-                    <p class="text-gray-700 leading-relaxed inbox-text">
-                        Machine unlearning is becoming a cornerstone in data
-                science, driven by rising societal demands for privacy and
-                trustworthiness. With many recent regulations and the increasing adoption of large-scale foundation models, the need for
-                trustworthy machine unlearning techniques has never been more
-                urgent. This makes ICDM 2025—one of the premier venues
-                for data mining research—an ideal forum for presenting a
-                comprehensive tutorial on data security and privacy preservation
-                in machine unlearning. Our tutorial is timely and highly
-                relevant to the ICDM community. It systematically introduces
-                machine unlearning from a data mining perspective, connecting
-                foundational principles with emerging data security and privacy
-                preservation challenges. It also addresses interdisciplinary
-                directions, highlighting the fast-growing impact of machine
-                unlearning across diverse domains. The tutorial emphasizes
-                hands-on relevance, offering structured unlearning threat frameworks for both researchers and practitioners. By presenting this
-                tutorial at ICDM 2025, we aim to stimulate cross-disciplinary
-                research collaboration, inspire novel future directions, and provide actionable insights for building trustworthy data-driven
-                learning systems
-                    </p>
-                </section>
 
-                <section id="related-tutorials">
-                    <h2 class="text-2xl font-bold mb-6 border-b pb-3">Related Tutorials</h2>
-                    <p class="text-gray-700 leading-relaxed inbox-text mb-4">
-People are increasingly attending tutorials and workshops related to machine unlearning due to their growing
-prominence in the fields of data mining and machine learning.
-The tutorial focuses on machine unlearning in computer
-vision. Specifically, it provides a comprehensive and clear
-overview of the diverse range of applications for machine
-unlearning in computer vision, and emphasizes the importance
-of unlearning from an industry perspective. In contrast, we
-focus on a broader and more fundamental exploration of
-security and privacy challenges in machine unlearning, covering
-not only computer vision but also other domains such as
-natural language processing. The workshop  focuses on
-machine unlearning for generative AI models. In contrast,
-our tutorial emphasizes unlearning threat models, introduces
-systematic evaluation protocols, and outlines open research
-directions aimed at advancing the reliability and trustworthiness
-of machine unlearning across diverse real-world applications.
-Additionally, there is a strong and growing interest among
-individuals to attend security and privacy tutorials 
-to enhance their expertise in this rapidly evolving field.
-For example, the tutorial examines privacy and security
-issues when integrating different data sources in data market
-platforms. However, these tutorials fail to provide a systematic
-investigation of the unique security and privacy challenges in
-machine unlearning, such as formalizing unlearning threat
-models. Our tutorial addresses these gaps by offering a
-comprehensive framework that integrates unlearning attacks,
-unlearning defenses, and open research directions to advance
-the reliability and trustworthiness of unlearning techniques. </p>
-                </section>
+<section id="related-tutorials">
+    <h2 class="text-2xl font-bold mb-6 border-b pb-3">Related Tutorials</h2>
+
+            <p class="leading-relaxed inbox-text">
+                • <a href="https://sites.google.com/view/cvpr-2024-tutorial" class="text-blue-500 hover:underline" target="_blank">S. Liu, Y. Liu, N. B. Angel, and E. Triantafillou, “Machine unlearning in computer vision: Foundations and applications (cvpr 2024 tutorial),” in IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2024.</a>
+            </p>
+            <p class="leading-relaxed inbox-text">
+                
+              
+                • <a href="https://eprint.iacr.org/2025/724" class="text-blue-500 hover:underline" target="_blank">D. Alabi, S. Galhotra, S. Mehnaz, Z. Song, and E. Wu, “Privacy and security in distributed data markets,” in Companion of the 2025 International Conference on Management of Data, 2025, pp. 775–787.</a>
+            </p>
+
+            <p class="leading-relaxed inbox-text">
+
+                • <a href="https://labrai.github.io/KDD2025_Tutorial/" class="text-blue-500 hover:underline" target="_blank">L. Li, K. Zhao, K. Ding, Y. Zhao, Y. Dong, and N. Gong, “Model extraction attack and defense for large language models: Recent advances, challenges, and future perspectives (kdd 2025 tutorial),” in Proceedings of the 31th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, 2025.</a>
+            </p>
+
+</section>
 
  <section id="contributors">
     <h2 class="text-2xl font-bold mb-6 border-b pb-3">Contributors</h2>
@@ -283,7 +248,7 @@ Best Paper Runner-up for KDD 2020.</p>
 <section id="contact">
     <h2 class="text-2xl font-bold mb-6 border-b pb-3">Contact</h2>
     <p class="text-gray-700 leading-relaxed inbox-text">
-        For questions regarding the tutorial, please contact us at <a href="mailto:mdhuai@iastate.edu">mdhuai@iastate.edu</a>.
+        For questions regarding the tutorial, please contact us at <a href="mailto:mdhuai@iastate.edu" class="text-blue-500 underline">mdhuai@iastate.edu</a>.
     </p>
 </section>
 <section id="acknowledgments">
